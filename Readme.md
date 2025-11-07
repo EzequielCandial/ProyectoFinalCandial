@@ -1,6 +1,6 @@
 # Proyecto Final- Simulador de Conversión de Monedas y Criptomonedas
 
-**Autor:** Ezequiel Candial  
+**Alumno:** Ezequiel Candial  
 **Curso:** JavaScript - Coderhouse  
 **Año:** 2025  
 
