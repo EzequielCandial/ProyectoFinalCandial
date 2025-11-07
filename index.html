@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador de Conversión - Ezequiel Candial</title>
+  <meta name="description" content="Simulador de conversión de monedas y criptomonedas con cartera virtual e historial.">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Simulador de Conversión</h1>
+    <p>Monedas, Criptomonedas y Cartera Virtual</p>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <h2>Datos del usuario</h2>
+      <form id="userForm" class="form-inline">
+        <label for="userName">Nombre:</label>
+        <input type="text" id="userName" placeholder="Tu nombre" />
+        <button type="submit" class="btn">Guardar</button>
+      </form>
+      <p id="welcomeText" class="muted"></p>
+    </section>
+
+    <section class="card">
+      <h2>Tu cartera virtual</h2>
+      <table>
+        <thead>
+          <tr><th>Moneda</th><th>Tipo</th><th>Saldo</th></tr>
+        </thead>
+        <tbody id="balancesTableBody"></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Conversor</h2>
+      <form id="convertForm" class="form-grid">
+        <div>
+          <label for="fromCurrency">Desde</label>
+          <select id="fromCurrency" required></select>
+        </div>
+        <div>
+          <label for="toCurrency">Hacia</label>
+          <select id="toCurrency" required></select>
+        </div>
+        <div>
+          <label for="amount">Monto</label>
+          <input type="number" id="amount" min="0.01" step="0.01" required />
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="applyToWallet" />
+          <label for="applyToWallet">Aplicar a la cartera</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Convertir</button>
+      </form>
+      <div id="resultBox" class="result-box"></div>
+    </section>
+
+    <section class="card">
+      <h2>Historial de operaciones</h2>
+      <label for="filterType">Filtrar:</label>
+      <select id="filterType">
+        <option value="all">Todas</option>
+        <option value="fiat">Fiat</option>
+        <option value="crypto">Cripto</option>
+      </select>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th><th>Desde</th><th>Hacia</th><th>Monto</th><th>Resultado</th><th>Cartera</th>
+          </tr>
+        </thead>
+        <tbody id="historyTableBody"></tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Proyecto Final JavaScript - Ezequiel Candial</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

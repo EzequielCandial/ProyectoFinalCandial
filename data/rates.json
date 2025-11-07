@@ -1,0 +1,19 @@
+{
+  "base": "USD",
+  "rates": {
+    "USD": 1,
+    "EUR": 0.92,
+    "ARS": 950,
+    "BRL": 5.2,
+    "CLP": 920,
+    "UYU": 40,
+    "BTC": 0.000016,
+    "ETH": 0.00025,
+    "USDT": 1,
+    "USDC": 1
+  },
+  "meta": {
+    "last_update": "2025-10-01",
+    "description": "Valores de referencia simulados para el proyecto final."
+  }
+}

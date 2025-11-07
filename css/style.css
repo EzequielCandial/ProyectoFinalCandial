@@ -1,0 +1,84 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+
+body {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.header {
+  text-align: center;
+  padding: 1.5rem;
+  background: #111827;
+  border-bottom: 1px solid #1f2937;
+}
+
+.header h1 { font-size: 2rem; }
+.header p { color: #9ca3af; }
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #111827;
+  padding: 1.2rem;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+h2 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+.muted { color: #9ca3af; font-size: 0.9rem; }
+
+input, select {
+  width: 100%;
+  padding: 0.45rem;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  background: #020817;
+  color: #e5e7eb;
+}
+
+.btn {
+  background: #2563eb;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover { background: #1d4ed8; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+th, td {
+  border-bottom: 1px solid #1f2937;
+  padding: 0.4rem;
+  text-align: left;
+}
+
+.result-box {
+  margin-top: 0.8rem;
+  background: #020817;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
